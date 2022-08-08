@@ -6,11 +6,11 @@ Consumindo a api do https://www.themoviedb.org/
 
 ## Falta finalizar 
 
-#### Pagina de loguin
-#### Pagina de listas
-#### Colocar os filmes mais populares na pagina inicial 
+#### Página de loguin
+#### Página de listas
+#### Colocar os filmes mais populares na página inicial 
 #### Ajustar o footer
-#### Mover o resultado da consulta pra pagina buscas 
+#### Mover o resultado da consulta para a página buscas 
 #### Ajustar a responsividade
 
 ![capa](./src/image/capa.png)
