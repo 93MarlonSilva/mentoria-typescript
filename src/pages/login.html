@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="../css/loguin.css">
     <script src="dist/desafios/desafio4.js" defer></script>
 </head>
 <body>
@@ -42,27 +42,62 @@
               </div>
             </li>
           </ul>
-            <a class="nav-link" href="src/pages/listas.html">Listas</a>
-            <a class="nav-link" href="#">PT</a>
-            <a class="nav-link" href="src/pages/login.html"">Entrar</a>
+            <a class="nav-link" href="./listas.html">Listas</a>
+            <a class="nav-link">PT</a>
+            <a class="nav-link" href="./login.html">Entrar</a>
             <a class="nav-link" href="www.google.com">Juntar-se ao TMDB</a>
         </div>  
       </nav>
       
     </header>
-    <div style="display: flex;">
-      <div style="display: none; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
-          <input id="login" placeholder="Login" onchange="preencherLogin(event)">
-          <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
-          <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
-          <button id="login-button" disabled>Login</button>
+    <div id="content">
+      <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+        <h1>Entre com a sua conta.</h1>
+        <input id="login" placeholder="Nome de usuário" onchange="preencherLogin(event)">
+        <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+        <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+        <button id="login-button" disabled>Entrar</button>
       </div>
-      <div id="search-container">
-          <h1>Bem-Vindo(a)!</h1>
-          <h2>Milhões de Filmes, Séries e Pessoas para Descobrir. Explore já.</h2>
-          <input id="search" placeholder="Buscar por um Filme, Série ou Pessoa...">
+      <div id="search-container" style="display: none;">
+          <input id="search" placeholder="Escreva...">
           <button id="search-button">Search</button>
       </div>
     </div>
+    <footer>
+        <p>THE MOVIE DB</p>
+        <button>JUNTE-SE A COMUNIDADE</button>
+        <div>
+            <p>O BÁSICO
+                Sobre o TMDB
+                Contate-nos
+                Suporte
+                API
+                Status do Sistema
+            </p>
+        </div>
+        <div>
+            <p>ENVOLVA-SE
+                Bíblia do Colaborador
+                Adicionar um novo Filme
+                Adicionar uma nova Série
+            </p>
+        </div>
+        <div>
+            <p>COMUNIDADE
+                Diretrizes
+                Discussões
+                Placar de colaboradores
+                Twitter
+            </p>
+        </div>
+        <div>
+            <p>LEGALIDADE
+                Termos de uso
+                Termos de Uso da API
+                Política de privacidade
+            </p>
+        </div>
+        
+    </footer>
 </body>
 </html>

@@ -1,0 +1,96 @@
+body {
+    background-image: linear-gradient(rgb(227, 227, 227), rgb(199, 199, 199), rgb(227, 227, 227));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(rgb(5, 58, 75), rgb(5, 32, 38), rgb(34, 31, 31));
+    height: 64px;
+    width: 100%;
+    z-index: 10;
+    transition: top 0.2s linear;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    margin-left: 3rem;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+.nav-link {
+    color: white;
+}
+
+ul {
+    margin-right: 20rem;
+    font-size: 18px;
+    color: white;
+}
+
+.tmdb{
+    font-size: 25px;
+    margin-right: 2rem;
+    font-size: 35px;
+    background: -webkit-linear-gradient(rgb(0, 255, 85), rgba(0, 212, 254, 0.864));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#search-container {
+    background-image: url("/src/image/arrow.jpg");
+    height: 25rem;
+    width: 85rem;
+    margin: 0 auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#search {
+    border-radius: 50px;
+    width: 78rem;
+    padding: 10px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    border: 0px;
+}
+
+#search-button {
+  border-radius: 50px;
+  background-image: linear-gradient(rgb(0, 255, 238), rgb(0, 107, 128), rgb(0, 225, 255));
+  padding: 10px;
+  width: 7rem;
+  margin-left: -7rem;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  border: 0px;
+}
+
+#bem-vindo {
+    font-weight: bold;
+    color: white;
+    font-size: 45px;
+    margin-left: 5rem;
+}
+
+#apresentacao {
+    color: white;
+    font-size: 25px;
+    margin-left: 5rem;
+    font-weight: bold;
+    margin-top: -20px;
+}

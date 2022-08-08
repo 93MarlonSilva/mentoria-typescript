@@ -1,12 +1,14 @@
 {
-  "name": "aula-dio",
+  "name": "clear",
   "version": "1.0.0",
-  "description": "",
+  "description": "O objetivo desse repositório é mostrar as resoluções do desafios de typescript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "build": "tsc --build",
+    "dev": "lite-server nodemon ./dist/desafio4.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "lite-server": "^2.6.1"
   },
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "nodemon": "^2.0.19",
+    "typescript": "^4.7.4"
   }
 }
