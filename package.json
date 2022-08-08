@@ -1,14 +1,14 @@
 {
   "name": "clear",
   "version": "1.0.0",
-  "description": "O objetivo desse repositório é mostrar as resoluções do desafios de typescript.",
+  "description": "Desafio de typescript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server",
-    "watch": "tsc --watch",
-    "build": "tsc --build",
-    "dev": "lite-server nodemon ./dist/desafio4.js"
+    "build:watch": "tsc -w",
+    "build": "tsc",
+    "dev": "lite-server nodemon ./dist/scripts/desafio4.js"
   },
   "author": "",
   "license": "ISC",

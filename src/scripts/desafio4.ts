@@ -37,7 +37,6 @@ searchButton.addEventListener('click', async () => {
   let ul = document.createElement('ul');
   ul.id = "lista"
   for (const item of listaDeFilmes.results) {
-
     var image = document.createElement('img')
     image.src = `https://image.tmdb.org/t/p/w200${item.poster_path}`;
 
@@ -46,8 +45,12 @@ searchButton.addEventListener('click', async () => {
     li.appendChild(document.createTextNode(item.original_title))
     ul.appendChild(li)
   }
-  console.log(listaDeFilmes.params)
-  searchContainer.appendChild(ul)
+
+  let url_string = "src/pages/busca.html"; 
+  let url : any = window.open(url_string);
+  let c = url.listaDeFilmes.params.get(listaDeFilmes.results);
+  let location : any = url_string 
+  location.href = url_string?  console.log(c) : console.log('a');
 
 })
 
